@@ -1,10 +1,11 @@
+##Apache web server reverse proxy configuration
 
-# What is web server
+### What is web server
    - A webserver is a software/hardware that runs web applications. The webserver's one of the main responsibilities is to store, process and deliver web requests and responds to the expected users.
    - In our case we are going to use apache webserver for achieve our reverse proxy.
-# What is reverse proxy
+### What is reverse proxy
 A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers
-# Install Apache web server
+### Install Apache web server
 
 
 At first, we are going to install apache2 webserver for the linux distribution (Debian based).
@@ -60,7 +61,7 @@ If, your reponse is not look this the start your apache webserver
 ```
 
 After, start your webserver please check the status again. If the status is active then you can look forward to the next stages. Oterwise, please uninstall the webserver and install it again.
-#### Enable couple of modules for performing reverse Proxy
+##### Enable couple of modules for performing reverse Proxy
 ```bash
    $ sudo a2enmod proxy 
    $ sudo a2enmod proxy_http 
@@ -69,7 +70,7 @@ Then, reload the server for trach this changes
 ```bash
    $ sudo service apache2 reload
 ```
-# Create virtual host for the application
+### Create virtual host for the application
 
 Open apache web server default config file through your favorite editor
 
