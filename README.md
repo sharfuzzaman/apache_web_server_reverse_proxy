@@ -74,7 +74,7 @@ Then, reload the server for trach this changes
 
 Open apache web server default config file through your favorite editor
 
-I am opening this file with vim editor Usually default conf file location is '/etc/apache2/sites-available/000-default.conf'
+I am opening this file with vim editor. Usually default conf file location is '/etc/apache2/sites-available/000-default.conf'
 ```bash
 $ sudo vim /etc/apache2/sites-available/000-default.conf
 ```
@@ -107,7 +107,7 @@ After open this file please paste the below configuration
    CustomLog ${APACHE_LOG_DIR}/access.log combined 
 </VirtualHost> 
 ``` 
-   - Here 'http://127.0.0.1:8080' In port 8080 my application is running, in this case your application could run on a different port. Make sure your application running port is there.
+   - Here 'http://127.0.0.1:8080', In port 8080 my application is running, in this case your application could run on a different port. Make sure your application running port is there.
    - ServerName here is sajib.tk (Please put your domain name here.)
 Now restart your apache webserver, 
 ```bash
